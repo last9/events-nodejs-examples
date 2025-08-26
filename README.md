@@ -1,4 +1,4 @@
-# Last9 Events Logger for Node.js
+# Send events to Last9 from Node.js apps
 
 This project demonstrates how to send JSON events to Last9 using the OpenTelemetry OTLP HTTP exporter.
 
@@ -66,4 +66,5 @@ docker run -e LAST9_ENDPOINT=your_last9_endpoint \
            last9-events-dispatcher
 
 ```
+
 
