@@ -27,7 +27,7 @@ const eventData = {
   "id": "usr_001",
   "email": "user@email.com",
   "operation": "signup",
-  "__last9event__": true  // Required flag
+  "__last9event__": true  // Required key
 };
 
 logger.logEvent(eventData, 'INFO');
@@ -39,8 +39,8 @@ await logger.shutdown();
 ## Environment Variables
 
 - `LAST9_ENDPOINT`: Your Last9 OTLP endpoint (without /v1/logs suffix)
-- `LAST9_USER`: Username for basic auth (optional)
-- `LAST9_PASSWORD`: Password for basic auth (optional)  
+- `LAST9_USER`: Last9 Username for basic auth 
+- `LAST9_PASSWORD`: Last9 Password for basic auth
 - `SERVICE_NAME`: Service name for telemetry (defaults to 'default-service')
 
 ## Running the Example
@@ -64,4 +64,5 @@ docker run -e LAST9_ENDPOINT=https://otlp-aps1.last9.io \
            -e LAST9_PASSWORD=your_password \
            -e SERVICE_NAME=events-nodejs-service \
            last9-logger
+
 ```
