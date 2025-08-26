@@ -1,0 +1,20 @@
+{
+  "name": "events-nodejs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@opentelemetry/api-logs": "^0.203.0",
+    "@opentelemetry/exporter-logs-otlp-http": "^0.203.0",
+    "@opentelemetry/resources": "^2.0.1",
+    "@opentelemetry/sdk-logs": "^0.203.0",
+    "@opentelemetry/semantic-conventions": "^1.36.0",
+    "dotenv": "^17.2.1"
+  }
+}
