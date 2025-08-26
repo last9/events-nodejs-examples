@@ -45,6 +45,23 @@ await logger.shutdown();
 
 ## Running the Example
 
+### Local Development
 ```bash
 node last9-logger.js
+```
+
+### Using Docker
+```bash
+# Build the Docker image
+docker build -t last9-logger .
+
+# Run with environment variables
+docker run --env-file .env last9-logger
+
+# Or run with inline environment variables
+docker run -e LAST9_ENDPOINT=https://otlp-aps1.last9.io \
+           -e LAST9_USER=your_user \
+           -e LAST9_PASSWORD=your_password \
+           -e SERVICE_NAME=events-nodejs-service \
+           last9-logger
 ```
