@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mv:*)",
+      "Bash(node:*)",
+      "Bash(npm install)",
+      "Bash(docker build:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
