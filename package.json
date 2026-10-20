@@ -9,6 +9,9 @@
   "author": "",
   "license": "ISC",
   "description": "",
+  "engines": {
+    "node": ">=24"
+  },
   "dependencies": {
     "@opentelemetry/api-logs": "^0.203.0",
     "@opentelemetry/exporter-logs-otlp-http": "^0.203.0",

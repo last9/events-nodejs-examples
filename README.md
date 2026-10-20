@@ -4,6 +4,8 @@ This project demonstrates how to send JSON events to Last9 using the OpenTelemet
 
 ## Setup
 
+Requires Node.js 24 or newer.
+
 1. Install dependencies:
 ```bash
 npm install
