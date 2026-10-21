@@ -71,6 +71,10 @@ docker run -e LAST9_ENDPOINT=your_last9_endpoint \
            last9-events-dispatcher
 ```
 
+### Checking the TLS blocklist
+
+`npm run check:tls` confirms the runtime rejects the eMudhra test chain with `CERT_REVOKED` and still reaches a trusted HTTPS endpoint. It needs network access; behind a proxy, run `node --use-env-proxy scripts/check-tls-blocklist.js`.
+
 ## Stopping the Application
 
 - Press `Ctrl-C` to gracefully stop the application
