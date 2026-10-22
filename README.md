@@ -4,6 +4,8 @@ This project demonstrates how to send JSON events to Last9 using the OpenTelemet
 
 ## Setup
 
+Requires Node.js 24.22.1 or a later 24.x release (`.nvmrc` pins 24.22.1). Earlier releases accept certificate chains from the distrusted eMudhra CA.
+
 1. Install dependencies:
 ```bash
 npm install
@@ -68,6 +70,10 @@ docker run -e LAST9_ENDPOINT=your_last9_endpoint \
            -e MAX_EVENTS=100 \
            last9-events-dispatcher
 ```
+
+### Checking the TLS blocklist
+
+`npm run check:tls` confirms the runtime rejects the eMudhra test chain with `CERT_REVOKED` and still reaches a trusted HTTPS endpoint. It needs network access; behind a proxy, run `node --use-env-proxy scripts/check-tls-blocklist.js`.
 
 ## Stopping the Application
 
